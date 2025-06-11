@@ -11,6 +11,12 @@ type Config interface {
 	Env() string
 }
 
+type App struct {
+	Env     string `yaml:"env" env-required:"true"`
+	Name    string `yaml:"name" env-required:"true"`
+	Version string `yaml:"version" env-required:"true"`
+}
+
 type Database struct {
 	Type          string        `yaml:"type" env-required:"true"`
 	Host          string        `yaml:"host" env-required:"true"`
