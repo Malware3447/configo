@@ -1,4 +1,4 @@
-module configo
+module github.com/Malware3447/configo
 
 go 1.24.2
 
